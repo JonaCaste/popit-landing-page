@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pop It</title>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header class="header">
+    <div class="header__container">
+      <h1 class="header__logo">Pop It</h1>
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li><a href="#about">Conocenos</a></li>
+          <li><a href="#ofertas">Ofertas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__main">
+      <div class="header__text">
+        <h2 class="header__title"><span>POP</span> IT!</h2>
+        <p class="header__subtitle">¡La mejor juguete antiestrés - burbujas infinitas!</p>
+        <button class="btn btn--light" onclick="mostrarAlerta()">COMPRAR</button>
+      </div>
+      <div class="header__carousel" id="carousel">
+        <img src="assets/round.png" alt="Pop It 1" class="carousel__img active">
+        <img src="assets/square.png" alt="Pop It 2" class="carousel__img">
+        <img src="assets/amongus.png" alt="Pop It 3" class="carousel__img">
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="about" id="about">
+      <h3 class="about__title">¿Qué es Pop it?</h3>
+      <p class="about__text">
+        Pop it se traduce literalmente como "revienta esto". Es un juego infantil que simula el estallido del plástico de burbujas. A diferencia del plástico, ¡puedes presionar las burbujas infinitamente con una sensación y sonido muy satisfactorios!
+      </p>
+    </section>
+
+    <section class="productos" id="ofertas">
+      <h3 class="productos__titulo">¡Elige tu Pop-It!</h3>
+      <div class="productos__grid">
+        <div class="producto">
+          <img src="assets/square.png" alt="Cuadrado" class="producto__img" />
+          <p class="producto__desc">Cuadrado multicolor</p>
+          <button class="btn">COMPRAR</button>
+        </div>
+        <div class="producto">
+          <img src="assets/amongus.png" alt="Among Us" class="producto__img" />
+          <p class="producto__desc">Among Us marmolado</p>
+          <button class="btn">COMPRAR</button>
+        </div>
+        <div class="producto">
+          <img src="assets/round.png" alt="Redondo" class="producto__img" />
+          <p class="producto__desc">Redondo multicolor</p>
+          <button class="btn">COMPRAR</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="reglas">
+      <div class="reglas__texto">
+        <h3 class="reglas__titulo">Reglas del juego</h3>
+        <p class="reglas__descripcion">
+          Los jugadores se turnan para presionar burbujas. Solo puedes presionar 1 a 3 burbujas por turno, pero deben estar juntas. Pierde quien presiona la última burbuja.
+        </p>
+      </div>
+      <div class="reglas__imagen">
+        <img src="assets/photo.jpg" alt="Reglas del juego">
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contacto">
+    <p>Copyright ©</p>
+    <nav class="footer__nav">
+      <ul>
+        <li>
+            <a href="#">Métodos de pago</a>
+        </li>
+        <li>
+            <a href="#">Envío</a>
+        </li>
+        <li>
+            <a href="#">Mayoristas</a>
+        </li>
+        <li>
+            <a href="#">Contacto</a>
+        </li>
+    </ul>
+    </nav>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
