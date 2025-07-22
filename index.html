@@ -12,12 +12,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 
 </head>
 <body>
   <header class="header">
     <div class="header__container">
-      <h1 class="header__logo">Pop It</h1>
+      <h1 class="header__logo"><span class="gradient-text">Pop-It!</span></h1>
       <nav class="header__nav">
         <ul class="header__menu">
           <li><a href="#about">Conocenos</a></li>
@@ -32,11 +35,9 @@
         <p class="header__subtitle">¡La mejor juguete antiestrés - burbujas infinitas!</p>
         <button class="btn btn--light" onclick="mostrarAlerta()">COMPRAR</button>
       </div>
-      <div class="header__carousel" id="carousel">
-        <img src="assets/round.png" alt="Pop It 1" class="carousel__img active">
-        <img src="assets/square.png" alt="Pop It 2" class="carousel__img">
-        <img src="assets/amongus.png" alt="Pop It 3" class="carousel__img">
-      </div>
+      <!-- <div class="header__image">
+        <img src="" alt="Pop It 1" class="header__img">
+      </div> -->
     </div>
   </header>
 
@@ -49,19 +50,19 @@
     </section>
 
     <section class="productos" id="ofertas">
-      <h3 class="productos__titulo">¡Elige tu Pop-It!</h3>
-      <div class="productos__grid">
-        <div class="producto">
+      <h3 class="productos__titulo">¡Elige tu <span class="gradient-text">Pop-It!</span></h3>
+      <div class="productos__carousel" id="productos__carousel">
+        <div class="producto producto__carousel active">
           <img src="assets/square.png" alt="Cuadrado" class="producto__img" />
           <p class="producto__desc">Cuadrado multicolor</p>
           <button class="btn">COMPRAR</button>
         </div>
-        <div class="producto">
+        <div class="producto producto__carousel">
           <img src="assets/amongus.png" alt="Among Us" class="producto__img" />
           <p class="producto__desc">Among Us marmolado</p>
           <button class="btn">COMPRAR</button>
         </div>
-        <div class="producto">
+        <div class="producto producto__carousel">
           <img src="assets/round.png" alt="Redondo" class="producto__img" />
           <p class="producto__desc">Redondo multicolor</p>
           <button class="btn">COMPRAR</button>
@@ -98,7 +99,7 @@
         <li>
             <a href="#">Contacto</a>
         </li>
-    </ul>
+      </ul>
     </nav>
   </footer>
 
