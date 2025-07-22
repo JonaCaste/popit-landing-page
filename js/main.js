@@ -3,15 +3,14 @@ function mostrarAlerta() {
   alert("¡Gracias por tu interés! Muy pronto te contactaremos.");
 }
 
-// // Carrusel manual en la cabecera
-// let index = 0;
-// const images = document.querySelectorAll('.carousel__img');
+// Boton hamburguesa - header
+const hamburgerBtn = document.getElementById("hamburger-btn");
+const navMenu = document.getElementById("nav-menu");
 
-// setInterval(() => {
-//   images[index].classList.remove('active');
-//   index = (index + 1) % images.length;
-//   images[index].classList.add('active');
-// }, 3000);
+hamburgerBtn.addEventListener("click", () => {
+  hamburgerBtn.classList.toggle("active");
+  navMenu.classList.toggle("active");
+});
 
 
 // Carrusel manual en la productos

@@ -78,10 +78,8 @@ a{
   font-weight: bold;
 }
 
-.header__nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
+.header__nav {
+  display: none;
 }
 
 .header__main {
@@ -96,7 +94,6 @@ a{
 }
 
 @media (min-width: 768px) {
-
   .header__logo {
     font-size: 60px;
   }
@@ -105,8 +102,91 @@ a{
     margin: 0 15px 0 15px;
   }
 
+  .header__nav {
+    display: block;
+    max-width: 300px;
+  }
   .header__nav ul {
     font-size: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+}
+
+
+/*Boton hamburguesa*/
+.header {
+  width: 100%;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.header__logo {
+  font-size: 1.5rem;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+/* Animación del botón */
+.hamburger.active .bar:nth-child(1) {
+  transform: rotate(45deg) translateY(10px);
+}
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active .bar:nth-child(3) {
+  transform: rotate(-45deg) translateY(-11px);
+}
+
+/* Menú oculto por defecto en mobile */
+.header__nav__hamburguesa {
+  display: none;
+  width: 100%;
+}
+
+.header__nav__hamburguesa.active {
+  display: block;
+}
+
+.header__menu__hamburguesa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 1rem;
+  padding: 1rem 0;
+
+  list-style: none;
+}
+
+@media (min-width: 768px) {
+
+  .hamburger {
+    display: none;
   }
 
 }
@@ -369,8 +449,8 @@ a{
 }
 
 .footer__nav ul {
-    margin-top: 10px;
-    list-style: none;
+  margin-top: 10px;
+  list-style: none;
 }
 
 @media (min-width: 768px) {
